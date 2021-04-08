@@ -2,6 +2,25 @@ body {
   background-color: #e3e3e3;
 }
 
+.main-header {
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.contenedor-actividades {
+  margin: 0 auto;
+  width: 500px;
+  background-color: rgb(169, 218, 218);
+  border-radius: 5px;
+  padding: 5px 10px 10px 10px;
+}
+
+.titulo-actividades {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .contenedor-actividad {
   margin: 0 auto;
   width: 700px;
@@ -17,7 +36,18 @@ body {
   text-align: justify;
 }
 
+a {
+  color: black;
+}
+
+a:hover {
+  color: rgb(74, 103, 156);
+}
+
 @media (max-width: 800px) {
+  .contenedor-actividades {
+    width: 80%;
+  }
   .contenedor-actividad {
     width: 80%;
   }
