@@ -1,15 +1,16 @@
 body {
-  background-color: orange;
-}
-
-.subtitulo-actividad {
-  text-align: center;
-  text-decoration: underline;
+  background-color: #e3e3e3;
 }
 
 .contenedor-actividad {
   margin: 0 auto;
   width: 700px;
+}
+
+.subtitulo-actividad {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 0;
 }
 
 .texto-receta {
