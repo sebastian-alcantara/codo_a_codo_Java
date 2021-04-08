@@ -18,6 +18,11 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0 auto;
   display: grid;
   grid-template-rows: auto auto;
+  width: 500px;
+}
+
+.main-header h1 {
+  font-weight: bold;
 }
 
 .contenedor-actividades {
@@ -58,7 +63,18 @@ a:hover {
   color: rgb(74, 103, 156);
 }
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
+  body {
+    font-size: 18px;
+  }
+
+  .main-header {
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 90%;
+  }
+  
   .contenedor-actividades {
     width: 80%;
   }
