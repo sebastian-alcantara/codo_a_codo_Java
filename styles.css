@@ -2,3 +2,21 @@ body {
   background-color: orange;
 }
 
+.subtitulo-actividad {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.contenedor-actividad {
+  width: 700px;
+}
+
+.texto-receta {
+  text-align: justify;
+}
+
+@media (max-width: 800px) {
+  .contenedor-actividad {
+    width: 80%;
+  }
+}
