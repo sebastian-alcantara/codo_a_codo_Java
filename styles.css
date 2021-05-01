@@ -39,6 +39,20 @@ h1,h2,h3,h4,h5,h6 {
   margin-bottom: 0;
 }
 
+.seccion-tema {
+  padding-top: 1rem;
+}
+
+.subtitulo-tema {
+  margin: 0;
+  padding: 0;
+}
+
+.listado-unidades {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
 .contenedor-actividad {
   margin: 0 auto;
   width: 700px;

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @font-face {
+      font-family: 'Roboto', sans-serif;
+      src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    }
+
+    html,
+    body {
+      margin: 0;
+    }
+
+    body {
+      /*background-color: #e3e3e3;*/
+      background-color: #e3e3e3;
+      font-size: 18px;
+      font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+      margin: 0;
+    }
+
+    header {
+      display: grid;
+      grid-template-rows: 6rem 4rem;
+    }
+
+    .contenido {
+      background-color: white;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .contenedor-actividad {
+      margin: 0 auto;
+      width: 700px;
+      grid-template-rows: auto auto;
+    }
+
+    .contenedor-imagen-header {
+      background-color: white;
+    }
+
+    .barra-direcciones {
+      background-color: #e3e3e3;
+      position: relative;
+    }
+
+    ul {
+      list-style: none;
+      display: grid;
+      width: 20rem;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      position: absolute;
+      right: 0;
+    }
+
+    .logo {
+      width: 128px;
+    }
+
+    .texto {
+      text-align: left;
+    }
+
+    footer {
+      background-color: #e3e3e3;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 800px) {
+      body {
+        font-size: 18px;
+      }
+
+      .contenedor-actividad {
+        width: 80%;
+      }
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Página de ejemplo</title>
+</head>
+
+<body>
+  <header>
+    <div class="contenedor-imagen-header">
+      <img src="bac-header-1.png" />
+    </div>
+    <div class="barra-direcciones">
+      <ul>
+        <li><a href="#">inicio</a></li>
+        <li><a href="#">quienes</a></li>
+        <li><a href="#">galeria</a></li>
+        <li><a href="#">contacto</a></li>
+      </ul>
+    </div>
+  </header>
+  <section class="contenido">
+    <div class="contenedor-actividad">
+      <img class="logo" src="HTML5_logo.svg" alt="Logo HTML5" />
+      <p class="texto">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+    </div>
+    <div class="contenedor-actividad">
+      <img class="logo" src="css3.svg" alt="Logo CSS3" />
+      <p class="texto">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+    </div>
+  </section>
+  <footer>
+    <h4>
+      Diseñado por Sebastián H. Alcántara <span><a
+          href="mailto:sebastian.h.alcantara@gmail.com">sebastian.h.alcantara@gmail.com</a></span> - <span><a
+          href="tel:1140789723">11-4078-9723</a></span>
+    </h4>
+  </footer>
+</body>
+
+</html>
