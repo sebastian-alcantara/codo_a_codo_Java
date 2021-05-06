@@ -1,0 +1,215 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  /*font-family: 'Helvetica', 'Arial', sans-serif;*/
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #444444;
+
+  --fondo-tarjeta: #f5f5f5;
+  --borde-tarjeta: #c5c5c5;
+  /*--precio: #99c562;*/
+  --precio: #71b11f;
+  --fondo-btn-naranja: #df8817;
+  --fondo-btn-todas: #71b11f;
+  --fondo-footer: #333333;
+  --texto-footer: #e8eef0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url('imagenes/header.jpg');
+  background-color: tomato;
+  display: grid;
+  grid-template-areas:
+    "logo nav"
+    "textos textos";
+  height: 100vh;
+  width: 100%;
+  grid-template-rows: 25% 75%;
+  grid-template-columns: 25% 75%;
+}
+
+header img {
+  grid-area: logo;
+  max-width: 25rem;
+  align-self: center;
+  padding-left: 4rem;
+}
+
+header nav {
+  grid-area: nav;
+  justify-self: end;
+  align-self: center;
+  width: 25rem;
+}
+
+header nav ul {
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  color: whitesmoke;
+}
+
+header .contenedor-textos {
+  grid-area: textos;
+  align-self: end;
+  padding: 2rem 4rem;
+  color: whitesmoke;
+}
+
+header .contenedor-textos h1 {
+  padding-bottom: 2rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+#id_seccion-mas-sobre-nosotros {
+  display: grid;
+  grid-template-rows: auto auto;
+  width: 80%;
+  justify-items: center;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+#id_seccion-mas-sobre-nosotros h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.tarjetas-detalle {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 2rem;
+  column-gap: 1rem;
+}
+
+.tarjeta-detalle-nosotros {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  row-gap: 1.5rem;
+}
+
+.tarjeta-detalle-nosotros h3 {
+  font-size: 1.5rem;
+}
+
+.tarjeta-detalle-nosotros p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+#id_seccion-casas-y-depas {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  width: 80%;
+  justify-items: center;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+#id_seccion-casas-y-depas h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.contenedor-casas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 2rem;
+  column-gap: 1rem;
+}
+
+.tarjeta-detalle-propiedad {
+  background-color: var(--fondo-tarjeta);
+  border: 2px solid var(--borde-tarjeta);
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto;
+}
+
+.imagen-casa {
+  width: 100%;
+}
+
+.tarjeta-detalle-propiedad h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 1rem 2rem 0 2rem;
+}
+
+.tarjeta-detalle-propiedad p {
+  padding: 0.7rem 2rem 0 2rem;
+}
+
+.tarjeta-detalle-propiedad h4 {
+  padding: 0.7rem 1rem 0 2rem;
+  color: var(--precio);
+}
+
+.contenedor-ams {
+  /*padding: 1rem 2rem 0 2rem;*/
+  padding-top: 1rem;
+  width: 60%;
+  margin: 0 auto;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*column-gap: 2rem;*/
+}
+
+.contenedor-am {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.contenedor-am p {
+  padding-left: 0.5rem;
+}
+
+.tarjeta-detalle-propiedad button {
+  width: 90%;
+  height: 3rem;
+  justify-self: center;
+  border-radius: 0;
+  border: none;
+  background-color: var(--fondo-btn-naranja);
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#id_btn-ver-todas {
+  justify-self: end;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0;
+  border: none;
+  background-color: var(--fondo-btn-todas);
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
