@@ -177,6 +177,7 @@ header .contenedor-textos h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 0.5rem;
+  justify-items: center;
   /*column-gap: 2rem;*/
 }
 
@@ -297,4 +298,81 @@ footer h4 {
 
 button:hover {
   cursor: pointer;
+}
+
+@media 
+only screen and (max-width: 800px) {
+  header {
+    grid-template-areas:
+      "nav"
+      "logo"
+      "textos";
+    grid-template-rows: 20% 20% 60%;
+    grid-template-columns: 100%;
+  }
+
+  header nav {
+    width: 90%;
+  }
+  
+  header nav ul {
+    font-size: 1rem;
+  }
+
+  header img {
+    padding-left: 1rem;
+  }
+  
+  header .contenedor-textos {
+    padding: 2rem 1rem;
+  }
+
+  #id_seccion-mas-sobre-nosotros {
+    width: 90%;
+  }
+  
+
+  .tarjetas-detalle {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    padding-top: 2rem;
+    row-gap: 1rem;
+  }
+
+  #id_seccion-casas-y-depas {
+    width: 95%;
+  }
+
+  .contenedor-casas {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 1rem;
+  }
+
+  .contenedor-am {
+    flex-direction: column;
+  }
+
+  .contenedor-am img {
+    width: 5vw;
+  }
+
+  footer {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+  
+  footer div {
+    padding-left: 1rem;
+  }
+  
+  footer div ul {
+    font-size: 1rem;
+  }
+  
+  footer h4 {
+    padding-right: 1rem;
+    font-size: 1rem;
+  }
 }
